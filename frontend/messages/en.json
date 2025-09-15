@@ -1,0 +1,83 @@
+{
+  "nav": {
+    "home": "Home",
+    "packages": "Packages",
+    "services": "Services",
+    "about": "About",
+    "contact": "Contact",
+    "dashboard": "Dashboard",
+    "login": "Login",
+    "register": "Register",
+    "profile": "Profile",
+    "logout": "Logout"
+  },
+  "hero": {
+    "title": "Your Sacred Journey Begins Here",
+    "subtitle": "Complete integrated platform for group Umrah journeys with official Nusuk services and certified local providers",
+    "cta": "Explore Packages",
+    "learn_more": "Learn More",
+    "trusted_by": "Trusted by 10,000+ Pilgrims"
+  },
+  "features": {
+    "title": "Why Choose Our Umrah Services",
+    "nusuk_title": "Official Nusuk Integration",
+    "nusuk_desc": "Direct integration with Saudi Arabia's official platform for seamless bookings",
+    "guide_title": "Expert Spiritual Guidance",
+    "guide_desc": "Experienced guides for all rituals and sacred site visits",
+    "comfort_title": "Premium Comfort",
+    "comfort_desc": "Carefully selected accommodations near the Holy Mosques",
+    "support_title": "24/7 Multilingual Support",
+    "support_desc": "Round-the-clock assistance in English, French, and Arabic"
+  },
+  "packages": {
+    "title": "Umrah Packages",
+    "subtitle": "Choose from our carefully crafted spiritual journey packages",
+    "essential": "Essential Umrah",
+    "premium": "Premium Umrah",
+    "family": "Family Umrah",
+    "days": "days",
+    "from": "From",
+    "per_person": "per person",
+    "book_now": "Book Now",
+    "view_details": "View Details",
+    "includes": "Includes"
+  },
+  "dashboard": {
+    "welcome": "Welcome to your Dashboard",
+    "groups": "Groups",
+    "pilgrims": "Pilgrims",
+    "bookings": "Bookings",
+    "payments": "Payments",
+    "reports": "Reports",
+    "settings": "Settings"
+  },
+  "auth": {
+    "sign_in": "Sign In",
+    "sign_up": "Sign Up",
+    "email": "Email",
+    "password": "Password",
+    "confirm_password": "Confirm Password",
+    "forgot_password": "Forgot Password?",
+    "remember_me": "Remember me",
+    "or": "Or",
+    "continue_with_google": "Continue with Google"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error occurred",
+    "success": "Success",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "view": "View",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "search": "Search",
+    "filter": "Filter",
+    "sort": "Sort",
+    "export": "Export",
+    "import": "Import"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "nav": {
+    "home": "Home",
+    "itinerary": "Schedule",
+    "permits": "Permits",
+    "map": "Map",
+    "profile": "Profile",
+    "group": "My Group",
+    "qrcode": "QR Code",
+    "emergency": "Emergency",
+    "notifications": "Notifications",
+    "settings": "Settings"
+  },
+  "home": {
+    "welcome": "Welcome",
+    "currentLocation": "Current Location",
+    "nextActivity": "Next Activity",
+    "permits": "Permits",
+    "todaySchedule": "Today's Schedule",
+    "quickActions": "Quick Actions"
+  },
+  "permits": {
+    "haram": "Haram Permit",
+    "nabawi": "Nabawi Permit",
+    "active": "Active",
+    "pending": "Pending",
+    "expired": "Expired",
+    "validUntil": "Valid until"
+  },
+  "activities": {
+    "ritual": "Ritual",
+    "transport": "Transport",
+    "meal": "Meal",
+    "rest": "Rest",
+    "visit": "Visit",
+    "shopping": "Shopping"
+  },
+  "status": {
+    "confirmed": "Confirmed",
+    "inProgress": "In Progress",
+    "completed": "Completed",
+    "pending": "Pending"
+  },
+  "actions": {
+    "qrCode": "QR Code",
+    "map": "Map",
+    "emergency": "Emergency",
+    "help": "Help",
+    "refresh": "Refresh",
+    "share": "Share",
+    "call": "Call"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "retry": "Retry",
+    "cancel": "Cancel",
+    "ok": "OK",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "view": "View",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "search": "Search",
+    "filter": "Filter",
+    "sort": "Sort"
+  }
+}

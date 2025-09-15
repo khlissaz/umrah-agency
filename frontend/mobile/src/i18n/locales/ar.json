@@ -1,0 +1,70 @@
+{
+  "nav": {
+    "home": "الرئيسية",
+    "itinerary": "البرنامج",
+    "permits": "التصاريح",
+    "map": "الخريطة",
+    "profile": "الملف الشخصي",
+    "group": "مجموعتي",
+    "qrcode": "رمز الاستجابة السريعة",
+    "emergency": "الطوارئ",
+    "notifications": "الإشعارات",
+    "settings": "الإعدادات"
+  },
+  "home": {
+    "welcome": "مرحباً",
+    "currentLocation": "الموقع الحالي",
+    "nextActivity": "النشاط التالي",
+    "permits": "التصاريح",
+    "todaySchedule": "برنامج اليوم",
+    "quickActions": "الإجراءات السريعة"
+  },
+  "permits": {
+    "haram": "تصريح الحرم",
+    "nabawi": "تصريح النبوي",
+    "active": "نشط",
+    "pending": "قيد الانتظار",
+    "expired": "منتهي الصلاحية",
+    "validUntil": "صالح حتى"
+  },
+  "activities": {
+    "ritual": "مناسك",
+    "transport": "نقل",
+    "meal": "وجبة",
+    "rest": "راحة",
+    "visit": "زيارة",
+    "shopping": "تسوق"
+  },
+  "status": {
+    "confirmed": "مؤكد",
+    "inProgress": "قيد التنفيذ",
+    "completed": "مكتمل",
+    "pending": "قيد الانتظار"
+  },
+  "actions": {
+    "qrCode": "رمز الاستجابة السريعة",
+    "map": "الخريطة",
+    "emergency": "الطوارئ",
+    "help": "المساعدة",
+    "refresh": "تحديث",
+    "share": "مشاركة",
+    "call": "اتصال"
+  },
+  "common": {
+    "loading": "جارٍ التحميل...",
+    "error": "خطأ",
+    "retry": "إعادة المحاولة",
+    "cancel": "إلغاء",
+    "ok": "موافق",
+    "save": "حفظ",
+    "delete": "حذف",
+    "edit": "تعديل",
+    "view": "عرض",
+    "back": "رجوع",
+    "next": "التالي",
+    "previous": "السابق",
+    "search": "بحث",
+    "filter": "تصفية",
+    "sort": "ترتيب"
+  }
+}

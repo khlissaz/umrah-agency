@@ -1,0 +1,83 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "packages": "Forfaits",
+    "services": "Services",
+    "about": "À Propos",
+    "contact": "Contact",
+    "dashboard": "Tableau de Bord",
+    "login": "Connexion",
+    "register": "S'inscrire",
+    "profile": "Profil",
+    "logout": "Déconnexion"
+  },
+  "hero": {
+    "title": "Votre Voyage Sacré Commence Ici",
+    "subtitle": "Plateforme intégrée complète pour les voyages Omra de groupe avec services Nusuk officiels et fournisseurs locaux certifiés",
+    "cta": "Explorer les Forfaits",
+    "learn_more": "En Savoir Plus",
+    "trusted_by": "Approuvé par plus de 10 000 pèlerins"
+  },
+  "features": {
+    "title": "Pourquoi Choisir Nos Services Omra",
+    "nusuk_title": "Intégration Officielle Nusuk",
+    "nusuk_desc": "Intégration directe avec la plateforme officielle d'Arabie Saoudite pour des réservations fluides",
+    "guide_title": "Guidance Spirituelle Expert",
+    "guide_desc": "Guides expérimentés pour tous les rituels et visites de sites sacrés",
+    "comfort_title": "Confort Premium",
+    "comfort_desc": "Hébergements soigneusement sélectionnés près des Mosquées Saintes",
+    "support_title": "Support Multilingue 24/7",
+    "support_desc": "Assistance continue en anglais, français et arabe"
+  },
+  "packages": {
+    "title": "Forfaits Omra",
+    "subtitle": "Choisissez parmi nos forfaits de voyage spirituel soigneusement élaborés",
+    "essential": "Omra Essentiel",
+    "premium": "Omra Premium",
+    "family": "Omra Familiale",
+    "days": "jours",
+    "from": "À partir de",
+    "per_person": "par personne",
+    "book_now": "Réserver",
+    "view_details": "Voir Détails",
+    "includes": "Inclut"
+  },
+  "dashboard": {
+    "welcome": "Bienvenue sur votre Tableau de Bord",
+    "groups": "Groupes",
+    "pilgrims": "Pèlerins",
+    "bookings": "Réservations",
+    "payments": "Paiements",
+    "reports": "Rapports",
+    "settings": "Paramètres"
+  },
+  "auth": {
+    "sign_in": "Se Connecter",
+    "sign_up": "S'inscrire",
+    "email": "Email",
+    "password": "Mot de passe",
+    "confirm_password": "Confirmer le mot de passe",
+    "forgot_password": "Mot de passe oublié?",
+    "remember_me": "Se souvenir de moi",
+    "or": "Ou",
+    "continue_with_google": "Continuer avec Google"
+  },
+  "common": {
+    "loading": "Chargement...",
+    "error": "Erreur survenue",
+    "success": "Succès",
+    "cancel": "Annuler",
+    "save": "Sauvegarder",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "view": "Voir",
+    "back": "Retour",
+    "next": "Suivant",
+    "previous": "Précédent",
+    "search": "Rechercher",
+    "filter": "Filtrer",
+    "sort": "Trier",
+    "export": "Exporter",
+    "import": "Importer"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "itinerary": "Programme",
+    "permits": "Permis",
+    "map": "Carte",
+    "profile": "Profil",
+    "group": "Mon Groupe",
+    "qrcode": "Code QR",
+    "emergency": "Urgence",
+    "notifications": "Notifications",
+    "settings": "Paramètres"
+  },
+  "home": {
+    "welcome": "Bienvenue",
+    "currentLocation": "Position Actuelle",
+    "nextActivity": "Prochaine Activité",
+    "permits": "Permis",
+    "todaySchedule": "Programme d'Aujourd'hui",
+    "quickActions": "Actions Rapides"
+  },
+  "permits": {
+    "haram": "Permis Haram",
+    "nabawi": "Permis Nabawi",
+    "active": "Actif",
+    "pending": "En Attente",
+    "expired": "Expiré",
+    "validUntil": "Valide jusqu'au"
+  },
+  "activities": {
+    "ritual": "Rituel",
+    "transport": "Transport",
+    "meal": "Repas",
+    "rest": "Repos",
+    "visit": "Visite",
+    "shopping": "Shopping"
+  },
+  "status": {
+    "confirmed": "Confirmé",
+    "inProgress": "En Cours",
+    "completed": "Terminé",
+    "pending": "En Attente"
+  },
+  "actions": {
+    "qrCode": "Code QR",
+    "map": "Carte",
+    "emergency": "Urgence",
+    "help": "Aide",
+    "refresh": "Actualiser",
+    "share": "Partager",
+    "call": "Appeler"
+  },
+  "common": {
+    "loading": "Chargement...",
+    "error": "Erreur",
+    "retry": "Réessayer",
+    "cancel": "Annuler",
+    "ok": "OK",
+    "save": "Sauvegarder",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "view": "Voir",
+    "back": "Retour",
+    "next": "Suivant",
+    "previous": "Précédent",
+    "search": "Rechercher",
+    "filter": "Filtrer",
+    "sort": "Trier"
+  }
+}
