@@ -1,12 +1,12 @@
-import { notFound } from 'next/navigation';
-import { getRequestConfig } from 'next-intl/server';
 
-const locales = ['en', 'fr', 'ar'];
+import { getTranslation, Language } from '../messages/translations';
 
-export default getRequestConfig(async ({ locale }) => {
-  if (!locales.includes(locale as any)) notFound();
+const locales: Language[] = ['en', 'fr', 'ar'];
 
-  return {
-    messages: (await import(`../messages/${locale}.json`)).default
-  };
-});
+export default async function getMessages({ locale }: { locale: string }) {
+   const lang = (locale as Language) || 'en';
+  if (!locales.includes(lang)) {
+    throw new Error(`Invalid locale: ${locale}`);
+  }
+  return getTranslation(lang);
+}
