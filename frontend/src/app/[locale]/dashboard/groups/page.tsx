@@ -18,7 +18,7 @@ import {
   Clock,
   AlertCircle
 } from 'lucide-react';
-import { motion } from 'framer-motion';
+import { MotionBox } from '@/components/ui/MotionBox';
 
 interface Group {
   id: string;
@@ -194,9 +194,9 @@ export default function GroupsPage() {
         {/* Groups Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6">
           {filteredGroups.map((group, index) => (
-            <motion.div
+            <MotionBox
               key={group.id}
-              className="bg-white rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition-shadow"
+               className="bg-white rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition-shadow"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
@@ -293,7 +293,7 @@ export default function GroupsPage() {
                   </div>
                 </div>
               </div>
-            </motion.div>
+            </MotionBox>
           ))}
         </div>
 
