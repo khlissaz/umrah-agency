@@ -71,7 +71,7 @@ export interface NusukPermitRequest {
   pilgrimId: string;
   permitType: 'haram' | 'nabawi';
   date: string;
-  timeSlot: string;
+  time: string;
   groupSize: number;
 }
 
@@ -161,19 +161,20 @@ export class NusukService {
   }
 
   // Permit Services
-  static async requestPermit(request: NusukPermitRequest) {
-    try {
-      const response = await nusukApi.post('/permits/haram', {
-        pilgrimId,
-        date,
-        time
-      });
-      return response.data;
-    } catch (error) {
-      console.error('Nusuk Haram permit request failed:', error);
-      throw error;
-    }
+static async requestPermit(request: NusukPermitRequest) {
+  try {
+    const { pilgrimId, date, time } = request; // Destructure the request object
+    const response = await nusukApi.post('/permits/haram', {
+      pilgrimId,
+      date,
+      time
+    });
+    return response.data;
+  } catch (error) {
+    console.error('Nusuk Haram permit request failed:', error);
+    throw error;
   }
+}
 
   static async batchPermitRequest(requests: NusukPermitRequest[]) {
     try {
