@@ -24,6 +24,7 @@ import {
   Globe
 } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { MotionBox } from '@/components/ui/MotionBox';
 
 interface PackageForm {
   name: {
@@ -676,14 +677,14 @@ export default function PackageBuilderPage() {
           {/* Main Content */}
           <div className="lg:col-span-3">
             <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-8">
-              <motion.div
+              <MotionBox
                 key={currentStep}
                 initial={{ opacity: 0, x: 20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.3 }}
               >
                 {renderStepContent()}
-              </motion.div>
+              </MotionBox>
 
               {/* Navigation Buttons */}
               <div className="flex items-center justify-between mt-8 pt-6 border-t border-gray-200">

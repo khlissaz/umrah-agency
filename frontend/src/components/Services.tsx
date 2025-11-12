@@ -3,6 +3,7 @@
 import { useTranslations } from 'next-intl';
 import { Plane, Hotel, Car, MapPin, Shield, Utensils, Phone, Users } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { MotionBox } from './ui/MotionBox';
 
 export function Services() {
   const t = useTranslations();
@@ -72,7 +73,7 @@ export function Services() {
   return (
     <section className="py-24 bg-gradient-to-br from-gray-50 to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div 
+        <MotionBox 
           // className="text-center mb-16"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -86,14 +87,14 @@ export function Services() {
             From planning to completion, we handle every aspect of your spiritual journey with care and expertise
           </p>
           <div className="w-24 h-1 bg-gradient-to-r from-primary-500 to-primary-600 rounded-full mx-auto mt-6"></div>
-        </motion.div>
+        </MotionBox>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((service, index) => {
             const colors = colorMap[service.color as keyof typeof colorMap];
             
             return (
-              <motion.div
+              <MotionBox
                 key={index}
                 // className="group relative bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100"
                 initial={{ opacity: 0, y: 30 }}
@@ -115,13 +116,13 @@ export function Services() {
                     {service.description}
                   </p>
                 </div>
-              </motion.div>
+              </MotionBox>
             );
           })}
         </div>
 
         {/* Nusuk Integration Highlight */}
-        <motion.div 
+        <MotionBox 
           // className="mt-20 bg-gradient-to-r from-primary-600 to-primary-700 rounded-3xl p-8 md:p-12 text-white relative overflow-hidden"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -181,7 +182,7 @@ export function Services() {
               </div>
             </div>
           </div>
-        </motion.div>
+        </MotionBox>
       </div>
     </section>
   );

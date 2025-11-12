@@ -13,6 +13,7 @@ import {
   Loader2
 } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { MotionBox } from './ui/MotionBox';
 
 interface PaymentFormProps {
   amount: number;
@@ -122,7 +123,8 @@ export function PaymentForm({ amount, currency, description, onSuccess, onError 
           <h3 className="text-lg font-semibold text-gray-900 mb-4">Méthode de Paiement</h3>
           <div className="grid grid-cols-1 gap-3">
             {paymentMethods.map((method) => (
-              <motion.label
+              <MotionBox
+              as="label"
                 key={method.id}
                 // className={`relative flex items-center p-4 border-2 rounded-lg cursor-pointer transition-all ${
                 //   selectedMethod === method.id

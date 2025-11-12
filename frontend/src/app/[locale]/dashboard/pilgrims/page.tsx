@@ -25,6 +25,7 @@ import {
   UserPlus
 } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { MotionBox } from '@/components/ui/MotionBox';
 
 interface Pilgrim {
   id: string;
@@ -369,7 +370,8 @@ export default function PilgrimsPage() {
               </thead>
               <tbody className="bg-white divide-y divide-gray-200">
                 {filteredPilgrims.map((pilgrim, index) => (
-                  <motion.tr
+                  <MotionBox
+                    as='tr'
                     key={pilgrim.id}
                     className="hover:bg-gray-50 transition-colors"
                     initial={{ opacity: 0, y: 20 }}
@@ -439,7 +441,7 @@ export default function PilgrimsPage() {
                         </button>
                       </div>
                     </td>
-                  </motion.tr>
+                  </MotionBox>
                 ))}
               </tbody>
             </table>

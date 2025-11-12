@@ -4,6 +4,7 @@ import { useTranslations, useLocale } from 'next-intl';
 import Link from 'next/link';
 import { Calendar, Users, ArrowRight, Check } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { MotionBox } from './ui/MotionBox';
 
 export function Packages() {
   const t = useTranslations('packages');
@@ -43,7 +44,7 @@ export function Packages() {
   return (
     <section className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div 
+        <MotionBox 
           // className="text-center mb-16"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -57,11 +58,11 @@ export function Packages() {
             {t('subtitle')}
           </p>
           <div className="w-24 h-1 bg-gradient-to-r from-primary-500 to-primary-600 rounded-full mx-auto mt-6"></div>
-        </motion.div>
+        </MotionBox>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {packages.map((pkg, index) => (
-            <motion.div
+            <MotionBox
               key={pkg.id}
               // className={`relative bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden group hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 ${
               //   pkg.popular ? 'lg:scale-105 border-primary-200' : ''
@@ -141,7 +142,7 @@ export function Packages() {
               {/* Decorative Elements */}
               <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-primary-400/10 to-transparent rounded-full -translate-y-16 translate-x-16"></div>
               <div className="absolute bottom-0 left-0 w-24 h-24 bg-gradient-to-tr from-primary-400/10 to-transparent rounded-full translate-y-12 -translate-x-12"></div>
-            </motion.div>
+            </MotionBox>
           ))}
         </div>
       </div>
