@@ -1,5 +1,7 @@
 {
   "compilerOptions": {
+    "typeRoots": ["./node_modules/@types", "./mobile/src/types"],
+     "allowImportingTsExtensions": true,
     "target": "es5",
     "lib": ["dom", "dom.iterable", "es6"],
     "allowJs": true,
