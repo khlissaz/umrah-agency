@@ -113,7 +113,7 @@ export function PaymentForm({ amount, currency, description, onSuccess, onError 
           <div className="text-right">
             <div className="text-3xl font-bold">${amount.toLocaleString()}</div>
             <div className="text-green-100">{currency.toUpperCase()}</div>
-          </div>
+          </div>l
         </div>
       </div>
 
@@ -161,14 +161,14 @@ export function PaymentForm({ amount, currency, description, onSuccess, onError 
                 {selectedMethod === method.id && (
                   <CheckCircle className="w-5 h-5 text-green-600" />
                 )}
-              </motion.label>
+              </MotionBox>
             ))}
           </div>
         </div>
 
         {/* Installment Options */}
         {selectedMethod === 'installment' && (
-          <motion.div
+          <MotionBox
             // className="mb-6 p-4 bg-blue-50 rounded-lg border border-blue-200"
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
@@ -207,12 +207,12 @@ export function PaymentForm({ amount, currency, description, onSuccess, onError 
                 </label>
               ))}
             </div>
-          </motion.div>
+          </MotionBox>
         )}
 
         {/* Card Details (if credit card selected) */}
         {selectedMethod === 'credit_card' && (
-          <motion.div
+          <MotionBox
             // className="mb-6 space-y-4"
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
@@ -267,7 +267,7 @@ export function PaymentForm({ amount, currency, description, onSuccess, onError 
                 className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
               />
             </div>
-          </motion.div>
+          </MotionBox>
         )}
 
         {/* Security Notice */}
