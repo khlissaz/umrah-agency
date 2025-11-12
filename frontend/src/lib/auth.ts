@@ -4,6 +4,7 @@ import GoogleProvider from 'next-auth/providers/google';
 import CredentialsProvider from 'next-auth/providers/credentials';
 import { prisma } from './prisma';
 import bcrypt from 'bcryptjs';
+import { Session, User } from '@/types';
 
 export const authOptions: NextAuthOptions = {
   adapter: PrismaAdapter(prisma),
@@ -55,20 +56,20 @@ export const authOptions: NextAuthOptions = {
   callbacks: {
     async jwt({ token, user }) {
       if (user) {
-        token.role = user.role;
+        token.role = (user as User)?.role;
       }
       return token;
     },
-    async session({ session, token }) {
-      if (token) {
-        session.user.id = token.sub!;
-        session.user.role = token.role as string;
+    async session({ session, token }){
+      if (token && session.user) {
+        (session.user as User).id = token.sub!;
+        // session.user.role = token.role as string;
       }
       return session;
     }
   },
   pages: {
     signIn: '/auth/signin',
-    signUp: '/auth/signup',
+    // signUp: '/auth/signup',
   }
 };

@@ -25,7 +25,7 @@ import {
   Copy,
   Settings
 } from 'lucide-react';
-import { motion } from 'framer-motion';
+import { MotionBox } from '@/components/ui/MotionBox';
 
 interface UmrahPackage {
   id: string;
@@ -365,7 +365,7 @@ export default function PackagesPage() {
         {/* Packages Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6">
           {filteredPackages.map((pkg, index) => (
-            <motion.div
+            <MotionBox
               key={pkg.id}
               className="bg-white rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition-shadow overflow-hidden"
               initial={{ opacity: 0, y: 20 }}
@@ -495,7 +495,7 @@ export default function PackagesPage() {
                   </div>
                 </div>
               </div>
-            </motion.div>
+            </MotionBox>
           ))}
         </div>
 

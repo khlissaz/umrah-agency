@@ -228,3 +228,12 @@ export interface PaginatedResponse<T> {
   limit: number;
   totalPages: number;
 }
+export interface Session {
+  user: {
+    id: string;
+    email: string;
+    name: string;
+    role: UserRole;
+  };
+  expires: string;
+}

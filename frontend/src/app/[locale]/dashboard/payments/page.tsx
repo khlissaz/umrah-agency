@@ -25,6 +25,7 @@ import {
   Receipt
 } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { MotionBox } from '@/components/ui/MotionBox';
 
 interface Payment {
   id: string;
@@ -217,12 +218,10 @@ export default function PaymentsPage() {
 
         {/* Stats Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
-          <motion.div
-            className="bg-white rounded-xl shadow-sm border border-gray-200 p-6"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-          >
+          <MotionBox
+    className="bg-white rounded-xl shadow-sm border border-gray-200 p-6"
+    variant="fadeUp"
+  >
             <div className="flex items-center justify-between">
               <div>
                 <p className="text-sm font-medium text-gray-600">Revenus Total</p>
@@ -238,13 +237,11 @@ export default function PaymentsPage() {
                 <DollarSign className="w-6 h-6 text-white" />
               </div>
             </div>
-          </motion.div>
+          </MotionBox>
 
-          <motion.div
+          <MotionBox
             className="bg-white rounded-xl shadow-sm border border-gray-200 p-6"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
+            variant="fadeUp" delay={0.1}
           >
             <div className="flex items-center justify-between">
               <div>
@@ -255,13 +252,11 @@ export default function PaymentsPage() {
                 <CheckCircle className="w-6 h-6 text-white" />
               </div>
             </div>
-          </motion.div>
+          </MotionBox>
 
-          <motion.div
+          <MotionBox
             className="bg-white rounded-xl shadow-sm border border-gray-200 p-6"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
+            variant="fadeUp" delay={0.2}
           >
             <div className="flex items-center justify-between">
               <div>
@@ -272,13 +267,11 @@ export default function PaymentsPage() {
                 <Clock className="w-6 h-6 text-white" />
               </div>
             </div>
-          </motion.div>
+          </MotionBox>
 
-          <motion.div
+          <MotionBox
             className="bg-white rounded-xl shadow-sm border border-gray-200 p-6"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.3 }}
+            variant="fadeUp" delay={0.3}
           >
             <div className="flex items-center justify-between">
               <div>
@@ -291,7 +284,7 @@ export default function PaymentsPage() {
                 <TrendingUp className="w-6 h-6 text-white" />
               </div>
             </div>
-          </motion.div>
+          </MotionBox>
         </div>
 
         {/* Filters */}
@@ -386,13 +379,13 @@ export default function PaymentsPage() {
               </thead>
               <tbody className="bg-white divide-y divide-gray-200">
                 {filteredPayments.map((payment, index) => (
-                  <motion.tr
-                    key={payment.id}
-                    className="hover:bg-gray-50 transition-colors"
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.3, delay: index * 0.05 }}
-                  >
+                   <MotionBox
+      key={payment.id}
+      as="tr"
+      className="hover:bg-gray-50 transition-colors"
+      variant="fadeUp"
+      delay={index * 0.05}
+    >
                     <td className="px-6 py-4 whitespace-nowrap">
                       <div>
                         <div className="text-sm font-medium text-gray-900">{payment.transactionId}</div>
@@ -445,7 +438,7 @@ export default function PaymentsPage() {
                         </button>
                       </div>
                     </td>
-                  </motion.tr>
+                  </MotionBox>
                 ))}
               </tbody>
             </table>

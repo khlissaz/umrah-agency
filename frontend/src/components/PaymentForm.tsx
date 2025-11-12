@@ -124,11 +124,11 @@ export function PaymentForm({ amount, currency, description, onSuccess, onError 
             {paymentMethods.map((method) => (
               <motion.label
                 key={method.id}
-                className={`relative flex items-center p-4 border-2 rounded-lg cursor-pointer transition-all ${
-                  selectedMethod === method.id
-                    ? 'border-green-500 bg-green-50'
-                    : 'border-gray-200 hover:border-gray-300'
-                }`}
+                // className={`relative flex items-center p-4 border-2 rounded-lg cursor-pointer transition-all ${
+                //   selectedMethod === method.id
+                //     ? 'border-green-500 bg-green-50'
+                //     : 'border-gray-200 hover:border-gray-300'
+                // }`}
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
@@ -167,7 +167,7 @@ export function PaymentForm({ amount, currency, description, onSuccess, onError 
         {/* Installment Options */}
         {selectedMethod === 'installment' && (
           <motion.div
-            className="mb-6 p-4 bg-blue-50 rounded-lg border border-blue-200"
+            // className="mb-6 p-4 bg-blue-50 rounded-lg border border-blue-200"
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             transition={{ duration: 0.3 }}
@@ -211,7 +211,7 @@ export function PaymentForm({ amount, currency, description, onSuccess, onError 
         {/* Card Details (if credit card selected) */}
         {selectedMethod === 'credit_card' && (
           <motion.div
-            className="mb-6 space-y-4"
+            // className="mb-6 space-y-4"
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             transition={{ duration: 0.3 }}

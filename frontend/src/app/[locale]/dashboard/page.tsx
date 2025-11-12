@@ -19,6 +19,7 @@ import {
   Plane
 } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { MotionBox } from '@/components/ui/MotionBox';
 
 interface DashboardStats {
   totalPilgrims: number;
@@ -159,7 +160,7 @@ export default function AdminDashboard() {
           {statCards.map((card, index) => {
             const colors = colorMap[card.color as keyof typeof colorMap];
             return (
-              <motion.div
+              <MotionBox
                 key={card.title}
                 className="bg-white rounded-xl shadow-sm border border-gray-200 p-6 hover:shadow-md transition-shadow"
                 initial={{ opacity: 0, y: 20 }}
@@ -176,7 +177,7 @@ export default function AdminDashboard() {
                     <card.icon className="w-6 h-6 text-white" />
                   </div>
                 </div>
-              </motion.div>
+              </MotionBox>
             );
           })}
         </div>
