@@ -2,11 +2,12 @@ export interface User {
   id: string;
   email: string;
   name: string;
+  password?: string;
   phone?: string;
   role: UserRole;
-  language: 'en' | 'fr' | 'ar';
-  createdAt: Date;
-  updatedAt: Date;
+  language?: 'en' | 'fr' | 'ar';
+  createdAt?: Date;
+  updatedAt?: Date;
 }
 
 export enum UserRole {
@@ -233,6 +234,7 @@ export interface Session {
     id: string;
     email: string;
     name: string;
+    password: string;
     role: UserRole;
   };
   expires: string;
